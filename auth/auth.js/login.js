@@ -14,7 +14,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         const data = await res.json();
         if (data.token) {
             localStorage.setItem('token', data.token);
-            window.location.href = 'dashboard-pages/dashboard.html';
+            window.location.href = '/dashboard-pages/dashboard.html';
         } else {
             alert('Login failed: ' + (data.error || 'Unknown error'));
         }
