@@ -20,7 +20,7 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
 
         if (res.ok && data.token) {
             localStorage.setItem('token', data.token);
-            window.location.href = '../dashboard/home.html';
+            window.location.href = '../dashboard-pages/dashboard.html';
         } else {
             alert('Signup failed: ' + (data.error || 'Unknown error'));
         }
